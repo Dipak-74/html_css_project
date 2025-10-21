@@ -1,497 +1,7 @@
 <html>
 
 <head>
-    <style>
-        :root{
-            scroll-behavior: smooth;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .main-contaier {
-            height: 460%;
-            width: 100vw;
-            background-color: #0B1D26;
-
-
-
-
-        }
-
-        .HG {
-            height: 25%;
-            width: 100vw;
-            background-image: url(img/HG.png);
-            background-image: linear-gradient(to bottom right, #0B1D26, #0B1D2600), url(img/HG.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-
-
-        }
-
-        .mg {
-            height: 114%;
-            width: 100vw;
-            background-image: url(img/MG.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            top: 50%;
-        }
-
-        .vg {
-            height: 93%;
-            width: 100vw;
-            background-image: url(img/VG.png);
-            background-image: linear-gradient(to top, #0B1D26, #0B1D2600), url(img/vg.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            top: 84%;
-        }
-
-        .hero {
-            height: 120%;
-            width: 100vw;
-            position: absolute;
-            display: flex;
-            justify-content: center;
-
-        }
-
-        .header {
-            height: 5%;
-            width: 90%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: absolute;
-            top: 5%;
-        }
-
-        .logo {
-            display: flex;
-            font-weight: 700;
-            gap: 3px;
-            font-size: 32px;
-            color: #FFFFFF;
-        }
-
-        .header-text {
-            width: 20%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 16px;
-            color: #FFFFFF;
-
-
-        }
-
-        .account {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 16px;
-            color: #FFFFFF;
-            gap: 10px;
-
-        }
-
-        #icon {
-            height: 30px;
-            width: 30px;
-        }
-
-        .socail {
-            height: 150px;
-            width: 20px;
-            position: absolute;
-            top: 30%;
-            left: 75px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            
-
-
-        }
-
-        .vertical-text {
-            color: #FFFFFF;
-            font-weight: 700;
-            font-size: 18px;
-            width: 50px;
-            transform: rotate(90deg);
-            width: 82px;
-            
-
-        }
-
-        .header2 {
-            height: 28%;
-            width: 50%;
-            
-            position: absolute;
-            top: 27%;
-            left: 27%;
-            right: 45%;
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-
-        .guide {
-            display: flex;
-            gap: 10px;
-
-        }
-
-        .rectagle {
-            width: 9%;
-            height: 8%;
-            background-color: #FBD784;
-            
-            color: #FBD784;
-            margin: 1.2%;
-
-        }
-
-        .guide-title {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: 800;
-            letter-spacing: 6px;
-            color: #FBD784;
-            text-transform: uppercase;
-        }
-
-        .prepared {
-            font-weight: 600;
-            font: Chronicle Display;
-            font-size: 30px;
-            color: #FFFFFF;
-
-            text-transform: capitalize;
-
-        }
-
-        .scroll {
-            font-weight: 700;
-            font-size: 18px;
-            font: gilroy;
-            display: flex;
-            align-items: center;
-            position: absolute;
-            bottom: 0;
-            display: flex;
-            gap: 20px;
-            color: #FFFFFF;
-
-
-
-        }
-
-        #arrow-icon {
-            width: 10%;
-            height: 10%;
-
-        }
-
-        .slider {
-            height: 20%;
-            width: 5%;
-            color: #FFFFFF;
-            
-            position: absolute;
-            top: 27%;
-            right: 5%;
-            display: flex;
-            flex-direction: column;
-            gap: 35px;
-            overflow-y: scroll;
-            scroll-behavior: smooth;
-
-        }
-        
-
-        .start {
-            font-size: 18px;
-            
-
-        }
-
-        .number {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 35px;
-
-
-        }
-
-        .blog {
-
-            height: 300%;
-            width: 76%;
-            
-            position: absolute;
-            top: 150%;
-            left: 10%;
-            display: flex;
-            flex-direction: column;
-            gap: 7%;
-
-
-        }
-
-        .blog1 {
-            width: 100%;
-            height: 25%;
-            
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-        }
-
-        .opacity {
-            width: 16%;
-            height: 33%;
-            
-            color: #FFFFFF;
-            font-weight: 700;
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 90px;
-            position: relative;
-            top: 3%;
-            opacity: 10%;
-
-
-        }
-
-        .get-started {
-            height: 70%;
-            width: 43%;
-            
-            display: flex;
-            flex-direction: column;
-            gap: 5%;
-            position: relative;
-            top: 16%;
-            right: 10%;
-
-        }
-
-
-
-        .guide1 {
-            width: auto;
-            display: flex;
-            gap: 15px;
-            height: 22px;
-            
-
-        }
-
-        .rectagle1 {
-            width: 15%;
-            height: 10%;
-            background-color: #FBD784;
-            
-
-            margin: 2%;
-        }
-
-        .guide-title1 {
-            width: 80%;
-            
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: 800;
-            font-size: 14px;
-            letter-spacing: 4px;
-            color: #FBD784;
-            text-transform: uppercase;
-        }
-
-        .heading {
-            color: #FFFFFF;
-            font: Chronicle Display;
-            font-size: 64px;
-            font-weight: 600;
-            width: 98%;
-            height: 35%;
-           
-            margin-bottom: 3%;
-        }
-
-        .blog-description {
-            width: 100%;
-            height: 35%;
-            
-            color: #FFFFFF;
-            font-size: 16px;
-            line-height: 135%;
-        }
-
-        .scroll1 {
-            display: flex;
-            justify-content: space-between;
-            
-            width: 23%;
-            font-size: 16px;
-            color: #FBD784;
-
-
-        }
-        .scroll2{
-            color: #FFFFFF;
-            text-decoration: none;
-
-            display: flex;
-          justify-content: space-between;
-          gap: 10px;
-        }
-        .read-more_color{
-             color: #FBD784;
-            text-decoration: none;
-
-            display: flex;
-          justify-content: space-between;
-          gap: 10px;
-        }
-
-
-        .blog-img {
-            height: 100%;
-            width: 38%;
-            
-            background-image: url(img/1.png);
-            background-size: cover;
-
-        }
-
-
-
-        .blog2 {
-            width: 100%;
-            height: 25%;
-            
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-
-        }
-
-        .opacity02 {
-            width: 16%;
-            height: 33%;
-            
-            color: #FFFFFF;
-            font-weight: 700;
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 90px;
-            position: relative;
-            top: 3%;
-            left: 7%;
-            opacity: 10%;
-        }
-
-        .Hiking-Essentials {
-            height: 70%;
-            width: 43%;
-            
-            display: flex;
-            flex-direction: column;
-            gap: 5%;
-            position: relative;
-            top: 16%;
-
-        }
-         .blog-img2 {
-            height: 100%;
-            width: 38%;
-            
-            background-image: url(img/2.png);
-            background-size: cover;
-         }
-
-         .blog3 {
-            width: 100%;
-            height: 25%;
-            
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-        }
-       .blog-img3 {
-            height: 100%;
-            width: 38%;
-            
-            background-image: url(img/3.png);
-            background-size: cover;
-         }
-         .footer{
-            width: 100%;
-            height: 10%;
-            
-            display: flex;
-            justify-content: space-between;
-            
-         
-         }
-         .footer-mntn{
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            color: #FFFFFF;
-            gap: 5px;
-
-         }
-         .footer-discrip{
-            width: 55%;
-            
-            margin-bottom: 10%;
-            
-         }
-         .Privacy{
-            opacity: 50%;
-         }
-         .More-Blog{
-            color: #FFFFFF;
-            
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            font-size: 14px;
-
-         }
-         .more-on{
-            font-size: 18px;
-            color: #FBD784;
-         }
-         .More-MNTN{
-            color: #FFFFFF;
-            
-            width: 15%;
-            display: flex;
-            flex-direction: column;
-            gap: 5%;
-            font-size: 14px;
-         }
-
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -515,17 +25,23 @@
                             <p>N</p>
                         </div>
                         <div class="header-text">
-                            <a class="scroll2" href=""><p>Equipment</p></a>
-                           <a class="scroll2"  href=""><p>About us</p></a> 
-                           <a class="scroll2"  href=""><p>Blog</p></a> 
+                            <a class="scroll2" href="">
+                                <p>Equipment</p>
+                            </a>
+                            <a class="scroll2" href="">
+                                <p>About us</p>
+                            </a>
+                            <a class="scroll2" href="">
+                                <p>Blog</p>
+                            </a>
                         </div>
-                       
+
                         <div class="account">
                             <div class="icon">
                                 <img src="img/account.png" id="icon">
                             </div>
                             <p>Account</p>
-                           
+
                         </div>
                     </div>
                     <div class="socail">
@@ -533,10 +49,10 @@
                             Follw us
                         </div>
                         <a href="https://www.instagram.com/">
-                        <img src="img/instagram.png" >
+                            <img src="img/instagram.png">
                         </a>
                         <a href="https://x.com/">
-                        <img src="img/twitter.png">
+                            <img src="img/twitter.png">
                         </a>
                     </div>
                     <div class="header2">
@@ -554,8 +70,8 @@
                         </div>
                         <div class="scroll">
                             <a href="" class="scroll2">
-                            <p>scroll down</p>
-                            <img src="img/downarrow.png" id="arrow-icon">
+                                <p>scroll down</p>
+                                <img src="img/downarrow.png" id="arrow-icon">
                             </a>
                         </div>
 
@@ -600,9 +116,9 @@
                                 you – novice, moderate, advanced moderate, expert, or expert backpacker?
                             </div>
                             <div class="scroll1">
-                                 <a href="" class="read-more_color">
-                                <p>read more</p>
-                                <img src="img/rightarrow.png" id="rightarrow-icon">
+                                <a href="" class="read-more_color">
+                                    <p>read more</p>
+                                    <img src="img/rightarrow.png" id="rightarrow-icon">
                                 </a>
                             </div>
                         </div>
@@ -612,7 +128,7 @@
                     </div>
                     <div id="blog2" class="blog2">
                         <div class="blog-img2">
-                            
+
                         </div>
                         <div class="opacity02">
                             <h1>02</h1>
@@ -639,15 +155,15 @@
                                 regular clothes, which will get heavy and chafe wif they get sweaty or wet.
                             </div>
                             <div class="scroll1">
-                                 <a href="" class="read-more_color">
-                                <p>read more</p>
-                                <img src="img/rightarrow.png" id="rightarrow-icon">
+                                <a href="" class="read-more_color">
+                                    <p>read more</p>
+                                    <img src="img/rightarrow.png" id="rightarrow-icon">
                                 </a>
                             </div>
                         </div>
 
                     </div>
-                     <div id="blog3" class="blog3">
+                    <div id="blog3" class="blog3">
                         <div class="opacity">
                             <h1>03</h1>
                         </div>
@@ -664,15 +180,18 @@
 
                             </div>
                             <div class="heading">
-                               Understand Your Map & Timing
+                                Understand Your Map & Timing
                             </div>
                             <div class="blog-description">
-                               To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..
+                                To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock
+                                bag. Read over the guide, study the map, and have a good idea of what to expect. I like
+                                to know what my next landmark is as I hike. For example, I’ll read the guide and know
+                                that say, in a mile, I make a right turn at the junction..
                             </div>
                             <div class="scroll1">
-                               <a href="" class="read-more_color">
-                                <p>read more</p>
-                                <img src="img/rightarrow.png" id="rightarrow-icon">
+                                <a href="" class="read-more_color">
+                                    <p>read more</p>
+                                    <img src="img/rightarrow.png" id="rightarrow-icon">
                                 </a>
                             </div>
                         </div>
@@ -682,14 +201,14 @@
                     </div>
                     <div class="footer">
                         <div class="footer-mntn">
-                          <div class="logo">
-                            <p>M</p>
-                            <p>N</p>
-                            <p>T</p>
-                            <p>N</p>
-                        </div>
+                            <div class="logo">
+                                <p>M</p>
+                                <p>N</p>
+                                <p>T</p>
+                                <p>N</p>
+                            </div>
                             <div class="footer-discrip">
-                               <h5> Get out there & discover your next slope, mountain & destination!</h5>
+                                <h5> Get out there & discover your next slope, mountain & destination!</h5>
                             </div>
                             <div class="Privacy">
                                 Copyright 2023 MNTN, Inc. Terms & Privacy
@@ -714,7 +233,7 @@
                             <p>Jobs</p>
                             <p>Press</p>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -732,3 +251,4 @@
 </body>
 
 </html>
+<!-- https://figma2-websit.netlify.app/ -->
